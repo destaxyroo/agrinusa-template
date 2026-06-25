@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriNusa - Produk</title>
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <meta name="description" content="Produk pertanian berkualitas dari AgriNusa - Beras organik, sayuran segar, buah-buahan, dan pupuk organik." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-spinner"></div>
+    <p>Memuat...</p>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><i class="fas fa-leaf"></i> Agri<span>Nusa</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="produk.html" class="active">Produk</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="kontak.html" class="btn btn-primary btn-small">Kontak</a></li>
+        </ul>
+        <button id="menuToggle" class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Produk Kami</h1>
+      <p>Hasil pertanian terbaik dari petani mitra AgriNusa.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="padi">Padi & Beras</button>
+        <button class="filter-btn" data-filter="sayur">Sayuran</button>
+        <button class="filter-btn" data-filter="buah">Buah-buahan</button>
+        <button class="filter-btn" data-filter="pupuk">Pupuk</button>
+      </div>
+
+      <div class="produk-grid produk-grid-full">
+        <div class="produk-card" data-category="padi">
+          <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400&h=300&fit=crop&auto=format" alt="Beras Organik" />
+          <div class="produk-info">
+            <h3>Beras Organik Premium</h3>
+            <p>Beras organik berkualitas tinggi dari lahan pertanian bebas pestisida di Jawa Barat.</p>
+            <span class="produk-harga">Rp 85.000/kg</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-category="padi">
+          <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=400&h=300&fit=crop&auto=format" alt="Beras Merah" />
+          <div class="produk-info">
+            <h3>Beras Merah Organik</h3>
+            <p>Beras merah kaya serat dan antioksidan, cocok untuk gaya hidup sehat.</p>
+            <span class="produk-harga">Rp 95.000/kg</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-category="sayur">
+          <img src="https://images.unsplash.com/photo-1598040015104-35f5b7f0eaa2?w=400&h=300&fit=crop&auto=format" alt="Paket Sayuran" />
+          <div class="produk-info">
+            <h3>Paket Sayuran Organik</h3>
+            <p>Paket berisi sayuran segar organik seperti bayam, kangkung, sawi, dan tomat.</p>
+            <span class="produk-harga">Rp 65.000/paket</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-category="sayur">
+          <img src="https://images.unsplash.com/photo-1581715884908-b5e6d6bdefec?w=400&h=300&fit=crop&auto=format" alt="Cabai Organik" />
+          <div class="produk-info">
+            <h3>Cabai Organik Segar</h3>
+            <p>Cabai organik segar dari kebun petani mitra di Sumatera.</p>
+            <span class="produk-harga">Rp 45.000/kg</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-category="buah">
+          <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=400&h=300&fit=crop&auto=format" alt="Buah-buahan" />
+          <div class="produk-info">
+            <h3>Paket Buah-buahan Segar</h3>
+            <p>Paket berisi buah-buahan segar pilihan seperti jeruk, apel, dan pisang organik.</p>
+            <span class="produk-harga">Rp 75.000/paket</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-category="pupuk">
+          <img src="https://images.unsplash.com/photo-1585133057493-68ca6043f6ad?w=400&h=300&fit=crop&auto=format" alt="Pupuk Organik" />
+          <div class="produk-info">
+            <h3>Pupuk Organik Cair</h3>
+            <p>Pupuk organik cair berkualitas tinggi untuk menyuburkan tanaman secara alami.</p>
+            <span class="produk-harga">Rp 120.000/liter</span>
+            <a href="#" class="btn btn-primary btn-small">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo"><i class="fas fa-leaf"></i> Agri<span>Nusa</span></div>
+          <p>Membangun masa depan pertanian Indonesia yang modern, produktif, dan berkelanjutan.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="#">Beras Organik</a></li>
+            <li><a href="#">Sayuran Segar</a></li>
+            <li><a href="#">Buah-buahan</a></li>
+            <li><a href="#">Pupuk Organik</a></li>
+            <li><a href="#">Alat Pertanian</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Dapatkan informasi terbaru seputar pertanian.</p>
+          <form>
+            <input type="email" placeholder="Email Anda" />
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgriNusa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
